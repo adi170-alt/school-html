@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitale veiligheid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+            <div>header</div>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <button id="settingsBtn" class="header-button">Settings</button>
+                <button id="darkModeBtn" class="header-button">Dark Mode</button>
+                <div class="profile-container">
+                    <img src="icon.png" alt="Profile" id="profileIcon" class="profile-icon">
+                    <div id="profileDropdown" class="profile-dropdown">
+                        <div class="dropdown-header">
+                            <img src="icon.png" alt="Profile" class="dropdown-profile-pic">
+                            <div class="profile-info">
+                                <span id="userDisplayName">Guest</span>
+                                <span id="userEmail" class="email"></span>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" id="profileLink">My Profile</a>
+                        <a href="#" id="accountSettings">Account Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" id="loginBtn" class="login-btn">Login</a>
+                        <a href="#" id="signupBtn" class="signup-btn">Sign Up</a>
+                        <a href="#" id="logoutBtn" class="logout-btn" style="display: none;">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="modal">
+      <div class="modal-content frosted">
+        <span class="close-btn">&times;</span>
+        <h2>Settings</h2>
+        <div class="settings-section">
+          <h3>Appearance</h3>
+          <div class="setting-item">
+            <label>Theme:</label>
+            <select id="themeSelect">
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+              <option value="system">System Default</option>
+            </select>
+          </div>
+          <div class="setting-item">
+            <label>Font Size:</label>
+            <select id="fontSelect">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content frosted">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required>
+          </div>
+          <button type="submit" class="tool-button primary">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+      <div class="modal-content frosted">
+        <span class="close-btn">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+          <div class="form-group">
+            <label for="signupName">Full Name:</label>
+            <input type="text" id="signupName" required>
+          </div>
+          <div class="form-group">
+            <label for="signupEmail">Email:</label>
+            <input type="email" id="signupEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" required>
+          </div>
+          <button type="submit" class="tool-button primary">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <nav>
+        <div class="nav-menu">
+            <p class="p1">Hover to view more</p>
+        </div>
+        <div class="nav-extra">
+            <div class="nav-item"><a href="beveiligingsaspecten.html">Beveiligingsaspecten</a></div>
+            <div class="nav-item"><a href="authenticatie.html">Authenticatie</a></div>
+            <div class="nav-item"><a href="identificatie-verificatie-authenticatie.html">Identificatie vs Verificatie vs Authenticatie</a></div>
+            <div class="nav-item"><a href="beveiligingszwakheden.html">Beveiligingszwakheden</a></div>
+            <div class="nav-item"><a href="ssl-certificaten.html">SSL-certificaten</a></div>
+            <div class="nav-item"><a href="computercriminaliteit.html">Computercriminaliteit</a></div>
+            <div class="nav-item"><a href="computercrimaliteit.html">computercrimaliteit</a></div>
+            <div class="nav-item"><a href="malware.html">Malware</a></div>            <div class="nav-item"><a href="bronnenpagina.html">bronnenpagina</a></div>
+        </div>
+    </nav><main>
+        <article class="intro-card">
+            <h2>Welkom bij Digitale Veiligheid</h2>
+            <p>Deze website biedt uitgebreide informatie over digitale veiligheid, van basisprincipes tot geavanceerde beveiligingsmaatregelen. Ontdek hoe je jezelf en je gegevens kunt beschermen in de digitale wereld.</p>
+        </article>
+
+        <div class="feature-cards-container">
+            <article class="feature-card">
+                <h2>Kernconcept: CIA-Triade</h2>
+                <p>Leer over de drie pijlers van informatiebeveiliging:</p>
+                <ul>
+                    <li>Confidentiality (Vertrouwelijkheid)</li>
+                    <li>Integrity (Integriteit)</li>
+                    <li>Availability (Beschikbaarheid)</li>
+                </ul>
+                <a href="beveiligingsaspecten.html" class="learn-more">Lees meer →</a>
+            </article>
+
+            <article class="feature-card">
+                <h2>Beveiligingsmaatregelen</h2>
+                <p>Ontdek de vier typen beveiligingsmaatregelen:</p>
+                <ul>
+                    <li>Preventieve maatregelen</li>
+                    <li>Detectieve maatregelen</li>
+                    <li>Repressieve maatregelen</li>
+                    <li>Correctieve maatregelen</li>
+                </ul>
+                <a href="computercriminaliteit.html" class="learn-more">Lees meer →</a>
+            </article>
+
+            <article class="feature-card">
+                <h2>Authenticatie & Identificatie</h2>
+                <p>Begrijp het verschil tussen:</p>
+                <ul>
+                    <li>Identificatie</li>
+                    <li>Verificatie</li>
+                    <li>Authenticatie</li>
+                </ul>
+                <a href="identificatie-verificatie-authenticatie.html" class="learn-more">Lees meer →</a>
+            </article>
+
+            <article class="feature-card">
+                <h2>Bescherm tegen Malware</h2>
+                <p>Leer over verschillende soorten malware en hoe je je ertegen kunt beschermen. Van virussen tot ransomware, wij leggen het uit.</p>
+                <a href="malware.html" class="learn-more">Lees meer →</a>
+            </article>
+        </div>
+    </main>    <div class="tools-container">
+        <section class="tool-section">
+            <h2>Wachtwoord Generator</h2>
+            <div class="password-generator">
+                <div class="password-output">
+                    <input type="text" id="passwordOutput" readonly>
+                    <button id="copyPassword" class="tool-button">Kopieer</button>
+                </div>
+                
+                <div class="password-options">
+                    <div class="option">
+                        <label>Wachtwoord Lengte:</label>
+                        <input type="number" id="passwordLength" value="16" min="8" max="64">
+                    </div>
+                    
+                    <div class="option">
+                        <input type="checkbox" id="useUppercase" checked>
+                        <label for="useUppercase">Hoofdletters</label>
+                    </div>
+                    
+                    <div class="option">
+                        <input type="checkbox" id="useLowercase" checked>
+                        <label for="useLowercase">Kleine letters</label>
+                    </div>
+                    
+                    <div class="option">
+                        <input type="checkbox" id="useNumbers" checked>
+                        <label for="useNumbers">Cijfers</label>
+                    </div>
+                    
+                    <div class="option">
+                        <input type="checkbox" id="useSpecial" checked>
+                        <label for="useSpecial">Speciale tekens</label>
+                    </div>
+                </div>
+                
+                <button id="generatePassword" class="tool-button primary">Genereer Wachtwoord</button>
+            </div>
+        </section>
+
+        <section class="quiz-section">
+            <h2>Test Je Kennis: Digitale Veiligheid Quiz</h2>
+            <div class="quiz-container">
+                <div id="quiz">
+                    <!-- Quiz questions will be inserted here by JavaScript -->
+                </div>
+                <button id="submit-quiz" class="tool-button primary">Controleer Antwoorden</button>
+                <div id="results" class="quiz-results"></div>
+            </div>
+        </section>
+    </div>    <aside class="updates-section">
+        <h3>Laatste Updates</h3>
+        <div class="updates-container">
+            <div class="update-item">
+                <h4>Nieuwe Beveiligingsrichtlijnen</h4>
+                <p>Ontdek de laatste aanbevelingen voor sterke wachtwoorden en authenticatie.</p>
+                <span class="update-date">16 April 2025</span>
+            </div>
+            <div class="update-item">
+                <h4>Malware Preventie Tips</h4>
+                <p>Leer hoe je je systeem kunt beschermen tegen de nieuwste malware bedreigingen.</p>
+                <span class="update-date">15 April 2025</span>
+            </div>
+            <div class="update-item">
+                <h4>Cybersecurity Best Practices</h4>
+                <p>Bekijk onze bijgewerkte richtlijnen voor online veiligheid.</p>
+                <span class="update-date">14 April 2025</span>
+            </div>
+        </div>
+    </aside><footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Over Deze Website</h4>
+                <p>Een educatieve bron over digitale veiligheid en cybersecurity.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Voor vragen over digitale veiligheid</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <a href="bronnenpagina.html">Bronnen</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Digitale Veiligheid. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <div id="resize-handle" class="resize-handle"></div>
+
+
+
+    <script>
+        // Improved Modal Management
+        class ModalManager {
+            constructor() {
+                this.activeModal = null;
+                this.setupEventListeners();
+            }
+
+            setupEventListeners() {
+                // Close modal on escape key
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && this.activeModal) {
+                        this.closeModal(this.activeModal);
+                    }
+                });
+
+                // Close modal on outside click
+                window.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('modal')) {
+                        this.closeModal(e.target);
+                    }
+                });
+
+                // Setup close buttons
+                document.querySelectorAll('.close-btn').forEach(btn => {
+                    btn.onclick = () => this.closeModal(btn.closest('.modal'));
+                });
+            }
+
+            openModal(modalId) {
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    if (this.activeModal) {
+                        this.closeModal(this.activeModal);
+                    }
+                    modal.style.display = 'block';
+                    document.body.style.overflow = 'hidden';
+                    this.activeModal = modal;
+                }
+            }
+
+            closeModal(modal) {
+                if (modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = '';
+                    this.activeModal = null;
+                }
+            }
+        }
+
+        // Enhanced Theme Management
+        class ThemeManager {
+            constructor() {
+                this.themeSelect = document.getElementById('themeSelect');
+                this.darkModeBtn = document.getElementById('darkModeBtn');
+                this.fontSelect = document.getElementById('fontSelect');
+                this.setupTheme();
+                this.setupFontSize();
+            }
+
+            setupTheme() {
+                const savedTheme = localStorage.getItem('theme') || 'light';
+                this.themeSelect.value = savedTheme;
+                this.applyTheme(savedTheme);
+
+                this.themeSelect.onchange = () => {
+                    const theme = this.themeSelect.value;
+                    this.applyTheme(theme);
+                    localStorage.setItem('theme', theme);
+                };
+
+                // Watch for system theme changes
+                if (window.matchMedia) {
+                    window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+                        if (this.themeSelect.value === 'system') {
+                            this.applyTheme('system');
+                        }
+                    });
+                }
+            }
+
+            applyTheme(theme) {
+                if (theme === 'system') {
+                    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                    document.body.classList.toggle('dark-mode', isDarkMode);
+                    this.darkModeBtn.textContent = isDarkMode ? 'Light Mode' : 'Dark Mode';
+                } else {
+                    document.body.classList.toggle('dark-mode', theme === 'dark');
+                    this.darkModeBtn.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+                }
+            }
+
+            setupFontSize() {
+                const savedSize = localStorage.getItem('fontSize') || 'medium';
+                this.fontSelect.value = savedSize;
+                this.applyFontSize(savedSize);
+
+                this.fontSelect.onchange = () => {
+                    const size = this.fontSelect.value;
+                    this.applyFontSize(size);
+                    localStorage.setItem('fontSize', size);
+                };
+            }
+
+            applyFontSize(size) {
+                const sizes = {
+                    'small': '14px',
+                    'medium': '16px',
+                    'large': '18px'
+                };
+                document.body.style.fontSize = sizes[size];
+            }
+        }
+
+        // User Authentication Management
+        class UserManager {
+            constructor() {
+                this.loginForm = document.getElementById('loginForm');
+                this.signupForm = document.getElementById('signupForm');
+                this.logoutBtn = document.getElementById('logoutBtn');
+                this.setupEventListeners();
+                this.updateUI();
+            }
+
+            setupEventListeners() {
+                this.loginForm.onsubmit = (e) => this.handleLogin(e);
+                this.signupForm.onsubmit = (e) => this.handleSignup(e);
+                this.logoutBtn.onclick = (e) => this.handleLogout(e);
+            }
+
+            handleLogin(e) {
+                e.preventDefault();
+                const email = document.getElementById('loginEmail').value;
+                const password = document.getElementById('loginPassword').value;
+                
+                // Simulate login (replace with actual authentication)
+                this.setUser({
+                    name: email.split('@')[0],
+                    email: email,
+                    isLoggedIn: true
+                });
+                
+                modalManager.closeModal(document.getElementById('loginModal'));
+            }
+
+            handleSignup(e) {
+                e.preventDefault();
+                const name = document.getElementById('signupName').value;
+                const email = document.getElementById('signupEmail').value;
+                
+                // Simulate signup (replace with actual registration)
+                this.setUser({
+                    name: name,
+                    email: email,
+                    isLoggedIn: true
+                });
+                
+                modalManager.closeModal(document.getElementById('signupModal'));
+            }
+
+            handleLogout(e) {
+                e.preventDefault();
+                localStorage.removeItem('user');
+                this.updateUI();
+            }
+
+            setUser(user) {
+                localStorage.setItem('user', JSON.stringify(user));
+                this.updateUI();
+            }
+
+            updateUI() {
+                const user = JSON.parse(localStorage.getItem('user'));
+                const userDisplayName = document.getElementById('userDisplayName');
+                const userEmail = document.getElementById('userEmail');
+                const loginBtn = document.getElementById('loginBtn');
+                const signupBtn = document.getElementById('signupBtn');
+                
+                if (user && user.isLoggedIn) {
+                    userDisplayName.textContent = user.name;
+                    userEmail.textContent = user.email;
+                    loginBtn.style.display = 'none';
+                    signupBtn.style.display = 'none';
+                    this.logoutBtn.style.display = 'block';
+                } else {
+                    userDisplayName.textContent = 'Guest';
+                    userEmail.textContent = '';
+                    loginBtn.style.display = 'block';
+                    signupBtn.style.display = 'block';
+                    this.logoutBtn.style.display = 'none';
+                }
+            }
+        }
+
+        // Initialize Managers
+        const modalManager = new ModalManager();
+        const themeManager = new ThemeManager();
+        const userManager = new UserManager();
+
+        // Setup button click handlers
+        document.getElementById('settingsBtn').onclick = () => modalManager.openModal('settingsModal');
+        document.getElementById('loginBtn').onclick = () => modalManager.openModal('loginModal');
+        document.getElementById('signupBtn').onclick = () => modalManager.openModal('signupModal');
+
+        // Profile dropdown functionality
+        const profileIcon = document.getElementById('profileIcon');
+        const profileDropdown = document.getElementById('profileDropdown');
+        
+        profileIcon.addEventListener('click', (e) => {
+            e.stopPropagation();
+            profileDropdown.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!profileIcon.contains(e.target) && !profileDropdown.contains(e.target)) {
+                profileDropdown.classList.remove('active');
+            }
+        });
+
+        // Password Generator functionality
+        const passwordOutput = document.getElementById('passwordOutput');
+        const copyPassword = document.getElementById('copyPassword');
+        const generatePassword = document.getElementById('generatePassword');
+        const passwordLength = document.getElementById('passwordLength');
+        const useUppercase = document.getElementById('useUppercase');
+        const useLowercase = document.getElementById('useLowercase');
+        const useNumbers = document.getElementById('useNumbers');
+        const useSpecial = document.getElementById('useSpecial');
+
+        function generateRandomPassword() {
+            const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            const lowercase = 'abcdefghijklmnopqrstuvwxyz';
+            const numbers = '0123456789';
+            const special = '!@#$%^&*()_+-=[]{}|;:,.<>?';
+            
+            let chars = '';
+            if (useUppercase.checked) chars += uppercase;
+            if (useLowercase.checked) chars += lowercase;
+            if (useNumbers.checked) chars += numbers;
+            if (useSpecial.checked) chars += special;
+            
+            if (!chars) {
+                alert('Selecteer ten minste één optie voor het wachtwoord.');
+                return;
+            }
+            
+            let password = '';
+            const length = parseInt(passwordLength.value);
+            
+            // Ensure at least one character from each selected type
+            if (useUppercase.checked) password += uppercase[Math.floor(Math.random() * uppercase.length)];
+            if (useLowercase.checked) password += lowercase[Math.floor(Math.random() * lowercase.length)];
+            if (useNumbers.checked) password += numbers[Math.floor(Math.random() * numbers.length)];
+            if (useSpecial.checked) password += special[Math.floor(Math.random() * special.length)];
+            
+            // Fill the rest randomly
+            while (password.length < length) {
+                password += chars[Math.floor(Math.random() * chars.length)];
+            }
+            
+            // Shuffle the password
+            password = password.split('').sort(() => Math.random() - 0.5).join('');
+            
+            passwordOutput.value = password;
+        }
+
+        generatePassword.addEventListener('click', generateRandomPassword);
+        
+        copyPassword.addEventListener('click', () => {
+            passwordOutput.select();
+            document.execCommand('copy');
+            
+            // Visual feedback
+            const originalText = copyPassword.textContent;
+            copyPassword.textContent = 'Gekopieerd!';
+            copyPassword.classList.add('copied');
+            
+            setTimeout(() => {
+                copyPassword.textContent = originalText;
+                copyPassword.classList.remove('copied');
+            }, 2000);
+        });
+
+        // Generate initial password
+        generateRandomPassword();
+    </script>
+
+    <script>
+        // Quiz functionality
+        const quizData = [
+            {
+                question: "Wat is een belangrijk onderdeel van de CIA-triade?",
+                options: [
+                    "Complexiteit",
+                    "Confidentialiteit",
+                    "Creativiteit",
+                    "Connectiviteit"
+                ],
+                correct: 1
+            },
+            {
+                question: "Welke authenticatiemethode is het meest veilig?",
+                options: [
+                    "Alleen een wachtwoord",
+                    "Een pincode",
+                    "Multi-factor authenticatie",
+                    "Een gebruikersnaam"
+                ],
+                correct: 2
+            },
+            {
+                question: "Wat is een voorbeeld van een preventieve beveiligingsmaatregel?",
+                options: [
+                    "Een backup maken",
+                    "Een virus verwijderen",
+                    "Een firewall installeren",
+                    "Een incident rapporteren"
+                ],
+                correct: 2
+            },
+            {
+                question: "Welk type malware vraagt meestal losgeld?",
+                options: [
+                    "Spyware",
+                    "Adware",
+                    "Ransomware",
+                    "Trojan"
+                ],
+                correct: 2
+            },
+            {
+                question: "Waarom is een SSL-certificaat belangrijk?",
+                options: [
+                    "Het maakt websites sneller",
+                    "Het versleutelt datacommunicatie",
+                    "Het voorkomt stroomuitval",
+                    "Het blokkeert alle virussen"
+                ],
+                correct: 1
+            }
+        ];
+
+        function createQuiz() {
+            const quizElement = document.getElementById('quiz');
+            quizData.forEach((question, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.classList.add('quiz-question');
+                
+                questionDiv.innerHTML = `
+                    <h3>Vraag ${index + 1}:</h3>
+                    <p>${question.question}</p>
+                    <div class="options">
+                        ${question.options.map((option, optionIndex) => `
+                            <div class="option">
+                                <input type="radio" name="question${index}" value="${optionIndex}" id="q${index}o${optionIndex}">
+                                <label for="q${index}o${optionIndex}">${option}</label>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+                
+                quizElement.appendChild(questionDiv);
+            });
+        }
+
+        function checkAnswers() {
+            let score = 0;
+            const results = document.getElementById('results');
+            const questions = document.querySelectorAll('.quiz-question');
+            
+            questions.forEach((question, index) => {
+                const selectedOption = question.querySelector(`input[name="question${index}"]:checked`);
+                const options = question.querySelectorAll('.option');
+                
+                options.forEach(option => {
+                    option.classList.remove('correct', 'incorrect');
+                });
+                
+                if (selectedOption) {
+                    const answerIndex = parseInt(selectedOption.value);
+                    const correctIndex = quizData[index].correct;
+                    
+                    if (answerIndex === correctIndex) {
+                        score++;
+                        options[answerIndex].classList.add('correct');
+                    } else {
+                        options[answerIndex].classList.add('incorrect');
+                        options[correctIndex].classList.add('correct');
+                    }
+                } else {
+                    options[quizData[index].correct].classList.add('correct');
+                }
+            });
+            
+            results.innerHTML = `
+                <h3>Quiz Resultaat</h3>
+                <p>Je score: ${score} van de ${quizData.length} vragen correct!</p>
+                <p>${getScoreMessage(score, quizData.length)}</p>
+            `;
+            results.style.display = 'block';
+        }
+
+        function getScoreMessage(score, total) {
+            const percentage = (score / total) * 100;
+            if (percentage === 100) return "Perfect! Je bent een digitale veiligheidsexpert!";
+            if (percentage >= 80) return "Heel goed! Je hebt een sterk begrip van digitale veiligheid.";
+            if (percentage >= 60) return "Goed bezig! Er is nog wat ruimte voor verbetering.";
+            if (percentage >= 40) return "Je bent op de goede weg. Bestudeer de onderwerpen nog eens.";
+            return "Je kunt je kennis verbeteren door de informatie op deze website goed door te nemen.";
+        }
+
+        // Initialize quiz
+        createQuiz();
+        
+        // Add event listener to submit button
+        document.getElementById('submit-quiz').addEventListener('click', checkAnswers);
+    </script>
+</body>
+</html>

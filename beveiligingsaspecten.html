@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beveiligingsaspecten - Digitale Veiligheid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+            <div>Beveiligingsaspecten</div>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <button id="settingsBtn" class="header-button">Settings</button>
+                <button id="darkModeBtn" class="header-button">Dark Mode</button>
+                <div class="profile-container">
+                    <img src="icon.png" alt="Profile" id="profileIcon" class="profile-icon">
+                    <div id="profileDropdown" class="profile-dropdown">
+                        <div class="dropdown-header">
+                            <img src="icon.png" alt="Profile" class="dropdown-profile-pic">
+                            <div class="profile-info">
+                                <span id="userDisplayName">Guest</span>
+                                <span id="userEmail" class="email"></span>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" id="profileLink">My Profile</a>
+                        <a href="#" id="accountSettings">Account Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" id="loginBtn" class="login-btn">Login</a>
+                        <a href="#" id="signupBtn" class="signup-btn">Sign Up</a>
+                        <a href="#" id="logoutBtn" class="logout-btn" style="display: none;">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-menu">
+            <p class="p1">Hover to view more</p>
+        </div>
+        <div class="nav-extra">
+            <div class="nav-item"><a href="beveiligingsaspecten.html">Beveiligingsaspecten</a></div>
+            <div class="nav-item"><a href="authenticatie.html">Authenticatie</a></div>
+            <div class="nav-item"><a href="identificatie-verificatie-authenticatie.html">Identificatie vs Verificatie vs Authenticatie</a></div>
+            <div class="nav-item"><a href="beveiligingszwakheden.html">Beveiligingszwakheden</a></div>
+            <div class="nav-item"><a href="ssl-certificaten.html">SSL-certificaten</a></div>
+            <div class="nav-item"><a href="computercriminaliteit.html">Computercriminaliteit</a></div>
+            <div class="nav-item"><a href="malware.html">Malware</a></div>
+            <div class="nav-item"><a href="bronnenpagina.html">Bronnenpagina</a></div>
+        </div>
+    </nav>
+
+    <main class="content-page">
+        <article class="full-width">
+            <h1>Beveiligingsaspecten</h1>
+            <section class="content-section">
+                <h2>Vertrouwelijkheid (Confidentiality)</h2>
+                <p>Vertrouwelijkheid waarborgt dat informatie alleen toegankelijk is voor geautoriseerde personen of systemen. Dit wordt bereikt door:</p>
+                <ul>
+                    <li>Encryptie van gegevens</li>
+                    <li>Toegangscontrole en autorisatie</li>
+                    <li>Beveiligde communicatiekanalen</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h2>Integriteit (Integrity)</h2>
+                <p>Integriteit verzekert dat informatie volledig en ongewijzigd blijft. Dit wordt gewaarborgd door:</p>
+                <ul>
+                    <li>Hashing en digitale handtekeningen</li>
+                    <li>Versiebeheer en audit trails</li>
+                    <li>Toegangscontrole voor wijzigingen</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h2>Beschikbaarheid (Availability)</h2>
+                <p>Beschikbaarheid garandeert dat systemen en informatie toegankelijk zijn wanneer nodig. Dit wordt bereikt door:</p>
+                <ul>
+                    <li>Redundantie en backup-systemen</li>
+                    <li>DDoS-bescherming</li>
+                    <li>Disaster recovery planning</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h2>De CIA-driehoek</h2>
+                <p>Deze drie aspecten vormen samen de CIA-driehoek, het fundament van informatiebeveiliging. Een goede beveiliging vereist een balans tussen deze drie elementen, aangezien ze elkaar kunnen beïnvloeden.</p>
+            </section>
+        </article>
+    </main>
+
+    <aside>
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#vertrouwelijkheid">Vertrouwelijkheid</a></li>
+            <li><a href="#integriteit">Integriteit</a></li>
+            <li><a href="#beschikbaarheid">Beschikbaarheid</a></li>
+        </ul>
+        <div class="info-box">
+            <h4>Wist je dat?</h4>
+            <p>De CIA-driehoek werd voor het eerst geïntroduceerd in de jaren '70 en is nog steeds de basis voor moderne informatiebeveiliging.</p>
+        </div>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 Digitale Veiligheid | <a href="bronnenpagina.html">Bronnen</a></p>
+    </footer>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="modal">
+        <!-- ... existing settings modal code ... -->
+    </div>
+
+    <!-- Modals for login/signup -->
+    <!-- ... existing modal code ... -->
+
+    <script>
+        // ... existing script code ...
+    </script>
+</body>
+</html>

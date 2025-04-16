@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificatie vs Verificatie vs Authenticatie - Digitale Veiligheid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+            <div>Identificatie, Verificatie & Authenticatie</div>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <button id="settingsBtn" class="header-button">Settings</button>
+                <button id="darkModeBtn" class="header-button">Dark Mode</button>
+                <div class="profile-container">
+                    <img src="icon.png" alt="Profile" id="profileIcon" class="profile-icon">
+                    <div id="profileDropdown" class="profile-dropdown">
+                        <!-- ... existing dropdown content ... -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <!-- ... existing navigation ... -->
+    </nav>
+
+    <main class="content-page">
+        <article class="full-width">
+            <h1>Identificatie, Verificatie en Authenticatie</h1>
+            
+            <section class="content-section comparison-section">
+                <div class="comparison-grid">
+                    <div class="comparison-item">
+                        <h2>Identificatie</h2>
+                        <p>Het claimen van een identiteit.</p>
+                        <h3>Kenmerken:</h3>
+                        <ul>
+                            <li>Gebruikersnaam opgeven</li>
+                            <li>E-mailadres invullen</li>
+                            <li>ID-kaart tonen</li>
+                        </ul>
+                        <div class="example-box">
+                            <h4>Voorbeeld:</h4>
+                            <p>"Ik ben Jan Jansen" zeggen of een gebruikersnaam invullen.</p>
+                        </div>
+                    </div>
+
+                    <div class="comparison-item">
+                        <h2>Verificatie</h2>
+                        <p>Het controleren van de opgegeven identiteit.</p>
+                        <h3>Kenmerken:</h3>
+                        <ul>
+                            <li>Controleren van documenten</li>
+                            <li>Vergelijken van gegevens</li>
+                            <li>Bevestigen van contactgegevens</li>
+                        </ul>
+                        <div class="example-box">
+                            <h4>Voorbeeld:</h4>
+                            <p>Een e-mail bevestigingslink klikken of een ID-kaart controleren op echtheid.</p>
+                        </div>
+                    </div>
+
+                    <div class="comparison-item">
+                        <h2>Authenticatie</h2>
+                        <p>Het bewijzen van de identiteit.</p>
+                        <h3>Kenmerken:</h3>
+                        <ul>
+                            <li>Wachtwoord invoeren</li>
+                            <li>Biometrische gegevens gebruiken</li>
+                            <li>2FA-code invoeren</li>
+                        </ul>
+                        <div class="example-box">
+                            <h4>Voorbeeld:</h4>
+                            <p>Inloggen met wachtwoord en een authenticator app code.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Het Beveiligingsproces</h2>
+                <div class="process-flow">
+                    <div class="step">
+                        <h3>Stap 1: Identificatie</h3>
+                        <p>Eerst geeft iemand aan wie hij/zij beweert te zijn.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Stap 2: Verificatie</h3>
+                        <p>Dan worden de opgegeven gegevens gecontroleerd.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Stap 3: Authenticatie</h3>
+                        <p>Tenslotte bewijst de persoon dat hij/zij daadwerkelijk die identiteit bezit.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Praktijkvoorbeeld</h2>
+                <div class="example-scenario">
+                    <h3>Bij het inloggen op een website:</h3>
+                    <ol>
+                        <li><strong>Identificatie:</strong> Je vult je e-mailadres in</li>
+                        <li><strong>Verificatie:</strong> Het systeem controleert of het account bestaat</li>
+                        <li><strong>Authenticatie:</strong> Je voert je wachtwoord in en mogelijk een 2FA-code</li>
+                    </ol>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <aside>
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#identificatie">Identificatie</a></li>
+            <li><a href="#verificatie">Verificatie</a></li>
+            <li><a href="#authenticatie">Authenticatie</a></li>
+        </ul>
+        
+        <div class="info-box">
+            <h4>Belangrijk om te onthouden</h4>
+            <p>Deze drie processen werken samen om een veilige digitale omgeving te creëren. Ze zijn alle drie nodig voor effectieve beveiliging.</p>
+        </div>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 Digitale Veiligheid | <a href="bronnenpagina.html">Bronnen</a></p>
+    </footer>
+</body>
+</html>

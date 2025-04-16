@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beveiligingszwakheden - Digitale Veiligheid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+            <div>Beveiligingszwakheden</div>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <button id="settingsBtn" class="header-button">Settings</button>
+                <button id="darkModeBtn" class="header-button">Dark Mode</button>
+                <div class="profile-container">
+                    <img src="icon.png" alt="Profile" id="profileIcon" class="profile-icon">
+                    <div id="profileDropdown" class="profile-dropdown">
+                        <!-- ... existing dropdown content ... -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <!-- ... existing navigation ... -->
+    </nav>
+
+    <main class="content-page">
+        <article class="full-width">
+            <h1>Beveiligingszwakheden</h1>
+            
+            <section class="content-section">
+                <h2>Architecturele Zwakheden</h2>
+                <div class="vulnerability-category">
+                    <h3>Systeem Architectuur</h3>
+                    <ul>
+                        <li>Onveilige standaardinstellingen</li>
+                        <li>Ontbrekende beveiligingslagen</li>
+                        <li>Single point of failure</li>
+                        <li>Verouderde systemen en software</li>
+                    </ul>
+
+                    <h3>Database Architectuur</h3>
+                    <ul>
+                        <li>SQL-injectie kwetsbaarheden</li>
+                        <li>Onveilige data-opslag</li>
+                        <li>Onversleutelde gevoelige gegevens</li>
+                    </ul>
+
+                    <div class="prevention-box">
+                        <h4>Preventieve Maatregelen:</h4>
+                        <ul>
+                            <li>Regelmatige security audits</li>
+                            <li>Implementatie van "security by design"</li>
+                            <li>Up-to-date patching beleid</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Communicatie Zwakheden</h2>
+                <div class="vulnerability-category">
+                    <h3>Netwerk Communicatie</h3>
+                    <ul>
+                        <li>Onbeveiligde netwerk protocollen</li>
+                        <li>Man-in-the-middle aanvallen</li>
+                        <li>DNS spoofing</li>
+                        <li>Packet sniffing</li>
+                    </ul>
+
+                    <h3>API Beveiliging</h3>
+                    <ul>
+                        <li>Onbeveiligde API endpoints</li>
+                        <li>Ontbrekende rate limiting</li>
+                        <li>Onvoldoende authenticatie</li>
+                    </ul>
+
+                    <div class="prevention-box">
+                        <h4>Preventieve Maatregelen:</h4>
+                        <ul>
+                            <li>Gebruik van HTTPS</li>
+                            <li>Implementatie van firewalls</li>
+                            <li>API-beveiliging met tokens</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Gebruikers Zwakheden</h2>
+                <div class="vulnerability-category">
+                    <h3>Menselijke Fouten</h3>
+                    <ul>
+                        <li>Zwakke wachtwoorden</li>
+                        <li>Social engineering gevoeligheid</li>
+                        <li>Phishing slachtoffers</li>
+                        <li>Onzorgvuldig omgaan met data</li>
+                    </ul>
+
+                    <h3>Gedragsrisico's</h3>
+                    <ul>
+                        <li>Delen van inloggegevens</li>
+                        <li>Gebruik van onbeveiligde netwerken</li>
+                        <li>Negeren van beveiligingsprotocollen</li>
+                    </ul>
+
+                    <div class="prevention-box">
+                        <h4>Preventieve Maatregelen:</h4>
+                        <ul>
+                            <li>Regelmatige security training</li>
+                            <li>Implementatie van 2FA</li>
+                            <li>Duidelijke beveiligingsrichtlijnen</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="best-practices">
+                    <h2>Best Practices voor Beveiliging</h2>
+                    <ul>
+                        <li>Implementeer gelaagde beveiliging (Defense in Depth)</li>
+                        <li>Voer regelmatig penetratietesten uit</li>
+                        <li>Houd alle systemen en software up-to-date</li>
+                        <li>Train gebruikers in beveiligingsbewustzijn</li>
+                        <li>Monitoren en loggen van beveiligingsgebeurtenissen</li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <aside>
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#architecturele-zwakheden">Architectuur</a></li>
+            <li><a href="#communicatie-zwakheden">Communicatie</a></li>
+            <li><a href="#gebruikers-zwakheden">Gebruikers</a></li>
+        </ul>
+        
+        <div class="warning-box">
+            <h4>Belangrijke Waarschuwing</h4>
+            <p>Beveiligingszwakheden moeten proactief worden aangepakt. Wacht niet tot er een incident plaatsvindt.</p>
+        </div>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 Digitale Veiligheid | <a href="bronnenpagina.html">Bronnen</a></p>
+    </footer>
+</body>
+</html>

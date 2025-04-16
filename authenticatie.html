@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authenticatie - Digitale Veiligheid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+            <div>Authenticatie</div>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <button id="settingsBtn" class="header-button">Settings</button>
+                <button id="darkModeBtn" class="header-button">Dark Mode</button>
+                <div class="profile-container">
+                    <img src="icon.png" alt="Profile" id="profileIcon" class="profile-icon">
+                    <div id="profileDropdown" class="profile-dropdown">
+                        <!-- ... existing dropdown content ... -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <!-- ... existing navigation ... -->
+    </nav>
+
+    <main class="content-page">
+        <article class="full-width">
+            <h1>Authenticatiemethoden en Best Practices</h1>
+            
+            <section class="content-section">
+                <h2>Multi-Factor Authenticatie (MFA)</h2>
+                <div class="auth-methods">
+                    <div class="method-explanation">
+                        <p>Multi-Factor Authenticatie combineert verschillende soorten authenticatie voor extra veiligheid:</p>
+                    </div>
+                    <div class="factors-grid">
+                        <div class="factor-card">
+                            <h3>Iets dat je weet</h3>
+                            <ul>
+                                <li>Wachtwoord</li>
+                                <li>PIN-code</li>
+                                <li>Beveiligingsvragen</li>
+                            </ul>
+                        </div>
+                        <div class="factor-card">
+                            <h3>Iets dat je hebt</h3>
+                            <ul>
+                                <li>Smartphone (2FA app)</li>
+                                <li>Hardware token</li>
+                                <li>Smartcard</li>
+                            </ul>
+                        </div>
+                        <div class="factor-card">
+                            <h3>Iets dat je bent</h3>
+                            <ul>
+                                <li>Vingerafdruk</li>
+                                <li>Gezichtsherkenning</li>
+                                <li>Iriscan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Wachtwoord Best Practices</h2>
+                <div class="password-practices">
+                    <div class="practice-card">
+                        <h3>Sterke Wachtwoorden</h3>
+                        <ul>
+                            <li>Minimaal 12 karakters</li>
+                            <li>Mix van letters, cijfers en symbolen</li>
+                            <li>Geen persoonlijke informatie</li>
+                            <li>Uniek voor elke dienst</li>
+                        </ul>
+                    </div>
+                    <div class="practice-card">
+                        <h3>Wachtwoord Management</h3>
+                        <ul>
+                            <li>Gebruik een wachtwoordmanager</li>
+                            <li>Regelmatig wachtwoord wijzigen</li>
+                            <li>Nooit wachtwoorden delen</li>
+                            <li>Twee-factor authenticatie activeren</li>
+                        </ul>
+                    </div>
+                    <div class="practice-card">
+                        <h3>Te Vermijden</h3>
+                        <ul>
+                            <li>Standaard wachtwoorden</li>
+                            <li>Voorspelbare patronen</li>
+                            <li>Hergebruik van wachtwoorden</li>
+                            <li>Wachtwoorden opschrijven</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Biometrische Authenticatie</h2>
+                <div class="biometric-section">
+                    <div class="biometric-types">
+                        <div class="biometric-card">
+                            <h3>Vingerafdruk</h3>
+                            <div class="pros-cons">
+                                <div class="pros">
+                                    <h4>Voordelen</h4>
+                                    <ul>
+                                        <li>Snel en gemakkelijk</li>
+                                        <li>Moeilijk te vervalsen</li>
+                                        <li>Breed beschikbaar</li>
+                                    </ul>
+                                </div>
+                                <div class="cons">
+                                    <h4>Nadelen</h4>
+                                    <ul>
+                                        <li>Kan beschadigd raken</li>
+                                        <li>Niet veranderbaar bij compromittering</li>
+                                        <li>Privacyzorgen</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="biometric-card">
+                            <h3>Gezichtsherkenning</h3>
+                            <div class="pros-cons">
+                                <div class="pros">
+                                    <h4>Voordelen</h4>
+                                    <ul>
+                                        <li>Contactloos</li>
+                                        <li>Natuurlijk gebruik</li>
+                                        <li>Continue verificatie mogelijk</li>
+                                    </ul>
+                                </div>
+                                <div class="cons">
+                                    <h4>Nadelen</h4>
+                                    <ul>
+                                        <li>Lichtgevoelig</li>
+                                        <li>Kan misleid worden</li>
+                                        <li>Verandert over tijd</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>2FA Apps en Tokens</h2>
+                <div class="twofa-section">
+                    <div class="twofa-grid">
+                        <div class="twofa-card">
+                            <h3>Authenticator Apps</h3>
+                            <ul>
+                                <li>Google Authenticator</li>
+                                <li>Microsoft Authenticator</li>
+                                <li>Authy</li>
+                            </ul>
+                            <p>Genereren tijdgebonden codes voor veilige login.</p>
+                        </div>
+                        <div class="twofa-card">
+                            <h3>Hardware Tokens</h3>
+                            <ul>
+                                <li>YubiKey</li>
+                                <li>Security Keys</li>
+                                <li>RSA SecurID</li>
+                            </ul>
+                            <p>Fysieke apparaten voor extra beveiligingslaag.</p>
+                        </div>
+                        <div class="twofa-card">
+                            <h3>SMS/Email Codes</h3>
+                            <ul>
+                                <li>Verificatiecodes via SMS</li>
+                                <li>Email beveiligingscodes</li>
+                                <li>Backup codes</li>
+                            </ul>
+                            <p>Minder veilig, maar breed beschikbaar.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Implementatie Tips</h2>
+                <div class="implementation-tips">
+                    <ol>
+                        <li>
+                            <h3>Risicoanalyse</h3>
+                            <p>Bepaal welk beveiligingsniveau nodig is voor verschillende systemen en data.</p>
+                        </li>
+                        <li>
+                            <h3>Gebruikerservaring</h3>
+                            <p>Zorg voor een balans tussen veiligheid en gebruiksgemak.</p>
+                        </li>
+                        <li>
+                            <h3>Fallback Opties</h3>
+                            <p>Bied veilige alternatieven voor wanneer primaire authenticatie niet werkt.</p>
+                        </li>
+                        <li>
+                            <h3>Monitoring</h3>
+                            <p>Houd login pogingen bij en detecteer verdachte activiteiten.</p>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <aside>
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#mfa">Multi-Factor Authenticatie</a></li>
+            <li><a href="#wachtwoord">Wachtwoord Best Practices</a></li>
+            <li><a href="#biometrie">Biometrische Authenticatie</a></li>
+            <li><a href="#2fa">2FA Apps en Tokens</a></li>
+        </ul>
+        
+        <div class="security-tip-box">
+            <h4>Security Tip</h4>
+            <p>Gebruik altijd minimaal twee verschillende authenticatiefactoren voor optimale beveiliging.</p>
+        </div>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 Digitale Veiligheid | <a href="bronnenpagina.html">Bronnen</a></p>
+    </footer>
+</body>
+</html>

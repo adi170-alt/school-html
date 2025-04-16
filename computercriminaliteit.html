@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computercriminaliteit - Digitale Veiligheid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+            <div>Computercriminaliteit</div>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <button id="settingsBtn" class="header-button">Settings</button>
+                <button id="darkModeBtn" class="header-button">Dark Mode</button>
+                <div class="profile-container">
+                    <img src="icon.png" alt="Profile" id="profileIcon" class="profile-icon">
+                    <div id="profileDropdown" class="profile-dropdown">
+                        <!-- ... existing dropdown content ... -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <!-- ... existing navigation ... -->
+    </nav>
+
+    <main class="content-page">
+        <article class="full-width">
+            <h1>Computercriminaliteit en Beveiligingsmaatregelen</h1>
+            
+            <section class="content-section">
+                <h2>Preventieve Maatregelen</h2>
+                <div class="measure-category">
+                    <p>Preventieve maatregelen zijn gericht op het voorkomen van incidenten:</p>
+                    <div class="examples-grid">
+                        <div class="example-card">
+                            <h3>Toegangsbeveiliging</h3>
+                            <ul>
+                                <li>Wachtwoordbeleid</li>
+                                <li>Two-factor authenticatie</li>
+                                <li>Biometrische verificatie</li>
+                            </ul>
+                        </div>
+                        <div class="example-card">
+                            <h3>Netwerk Beveiliging</h3>
+                            <ul>
+                                <li>Firewalls</li>
+                                <li>VPN-verbindingen</li>
+                                <li>Encryptie</li>
+                            </ul>
+                        </div>
+                        <div class="example-card">
+                            <h3>Training & Bewustwording</h3>
+                            <ul>
+                                <li>Security awareness training</li>
+                                <li>Phishing simulaties</li>
+                                <li>Beveiligingsprotocollen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Detectieve Maatregelen</h2>
+                <div class="measure-category">
+                    <p>Detectieve maatregelen zijn gericht op het ontdekken van beveiligingsincidenten:</p>
+                    <div class="examples-grid">
+                        <div class="example-card">
+                            <h3>Monitoring</h3>
+                            <ul>
+                                <li>Netwerkmonitoring</li>
+                                <li>Log analyse</li>
+                                <li>Intrusion Detection Systems (IDS)</li>
+                            </ul>
+                        </div>
+                        <div class="example-card">
+                            <h3>Scanning</h3>
+                            <ul>
+                                <li>Vulnerability scans</li>
+                                <li>Malware detectie</li>
+                                <li>Port scanning</li>
+                            </ul>
+                        </div>
+                        <div class="example-card">
+                            <h3>Auditing</h3>
+                            <ul>
+                                <li>Security audits</li>
+                                <li>Toegangscontrole reviews</li>
+                                <li>Compliance checks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Repressieve Maatregelen</h2>
+                <div class="measure-category">
+                    <p>Repressieve maatregelen zijn gericht op het beperken van de impact van een incident:</p>
+                    <div class="examples-grid">
+                        <div class="example-card">
+                            <h3>Incident Response</h3>
+                            <ul>
+                                <li>Incident response team</li>
+                                <li>Isolatie van systemen</li>
+                                <li>Blokkeren van aanvallen</li>
+                            </ul>
+                        </div>
+                        <div class="example-card">
+                            <h3>Toegangsbeperking</h3>
+                            <ul>
+                                <li>Account blokkering</li>
+                                <li>Netwerk segmentatie</li>
+                                <li>DDoS mitigatie</li>
+                            </ul>
+                        </div>
+                        <div class="example-card">
+                            <h3>Juridische Acties</h3>
+                            <ul>
+                                <li>Aangifte doen</li>
+                                <li>Bewijsmateriaal verzamelen</li>
+                                <li>Juridische procedures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Correctieve Maatregelen</h2>
+                <div class="measure-category">
+                    <p>Correctieve maatregelen zijn gericht op herstel na een incident:</p>
+                    <div class="examples-grid">
+                        <div class="example-card">
+                            <h3>Herstelacties</h3>
+                            <ul>
+                                <li>Systeem herstel</li>
+                                <li>Data recovery</li>
+                                <li>Patch management</li>
+                            </ul>
+                        </div>
+                        <div class="example-card">
+                            <h3>Verbeterprocessen</h3>
+                            <ul>
+                                <li>Root cause analysis</li>
+                                <li>Security aanpassingen</li>
+                                <li>Protocol updates</li>
+                            </ul>
+                        </div>
+                        <div class="example-card">
+                            <h3>Documentatie</h3>
+                            <ul>
+                                <li>Incident rapportage</li>
+                                <li>Lessons learned</li>
+                                <li>Procedurebijwerking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Implementatie Framework</h2>
+                <div class="implementation-flow">
+                    <ol>
+                        <li>
+                            <h3>Risico Analyse</h3>
+                            <p>Identificeer en evalueer potentiële beveiligingsrisico's</p>
+                        </li>
+                        <li>
+                            <h3>Maatregelen Selectie</h3>
+                            <p>Kies de juiste mix van beveiligingsmaatregelen</p>
+                        </li>
+                        <li>
+                            <h3>Implementatie</h3>
+                            <p>Voer de gekozen maatregelen gefaseerd in</p>
+                        </li>
+                        <li>
+                            <h3>Monitoring & Evaluatie</h3>
+                            <p>Controleer effectiviteit en pas aan waar nodig</p>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <aside>
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#preventieve-maatregelen">Preventieve Maatregelen</a></li>
+            <li><a href="#detectieve-maatregelen">Detectieve Maatregelen</a></li>
+            <li><a href="#repressieve-maatregelen">Repressieve Maatregelen</a></li>
+            <li><a href="#correctieve-maatregelen">Correctieve Maatregelen</a></li>
+        </ul>
+        
+        <div class="info-box">
+            <h4>Waarom alle vier?</h4>
+            <p>Een effectieve beveiliging vereist een combinatie van alle vier typen maatregelen om zowel proactief als reactief te kunnen handelen.</p>
+        </div>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 Digitale Veiligheid | <a href="bronnenpagina.html">Bronnen</a></p>
+    </footer>
+</body>
+</html>
